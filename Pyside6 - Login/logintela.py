@@ -17,7 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
     QMainWindow, QSizePolicy, QVBoxLayout, QWidget)
-import images_rc
+import images_qrc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -110,4 +110,11 @@ class Ui_MainWindow(object):
         self.label.setText("")
         self.input_senha.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Digite sua senha", None))
     # retranslateUi
-
+    
+'''if __name__ =='__main__':
+    app = QApplication(sys.argv)
+    w = QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(w)
+    w.show()
+    app.exec()'''
