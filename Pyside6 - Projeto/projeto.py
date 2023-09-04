@@ -74,19 +74,13 @@ class Ui_MainWindow(object):
         self.btn_01.setCursor(QCursor(Qt.ArrowCursor))
 
         self.gridLayout.addWidget(self.btn_01, 4, 0, 1, 1)
-
-
         self.gridLayout_2.addWidget(self.frame_2, 0, 0, 1, 1)
-
-
         self.horizontalLayout_2.addWidget(self.frame)
 
         MainWindow.setCentralWidget(self.centralwidget)
-
         self.retranslateUi(MainWindow)
 
         QMetaObject.connectSlotsByName(MainWindow)
-    # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
@@ -94,4 +88,4 @@ class Ui_MainWindow(object):
         self.label.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Selecione uma pasta", None))
         self.btn_01.setText(QCoreApplication.translate("MainWindow", u"Organizar", None))
-    # retranslateUi
+        
